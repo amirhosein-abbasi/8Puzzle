@@ -1,14 +1,18 @@
-
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Stack;
+import java.util.Vector;
+import java.util.stream.Stream;
 
 import java.util.Vector;
 
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter.DEFAULT;
 
-public class Problem_8puzzle {
+public class Puzzle implements GameInterface {
 	String input ;
 	Vector<State> allStates ;
 	
-	Problem_8puzzle(String init){
+	Puzzle(String init){
 		input = init ;
 		allStates=new Vector<State>() ;
 	}
