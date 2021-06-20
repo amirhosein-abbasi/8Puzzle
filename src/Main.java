@@ -5,7 +5,7 @@ public class Main {
 		
 		
 		String init="120345678" ; // string of initial game state
-		GameModel problem=new GameModel(init) ;
+		Puzzle problem=new Puzzle(init) ;
 		
 		//choose "dfs" or "astar" or "multidir"
 		GameSolver solver=new GameSolver ("dfs");
